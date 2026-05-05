@@ -141,6 +141,19 @@ helm install poddeck-agent poddeck/poddeck-agent \
 
 The `cluster.id` and `cluster.key` are provided by the PodDeck UI when you create a cluster.
 
+### Upgrade Agent
+
+To upgrade an existing agent to a new image tag without losing its cluster credentials:
+
+```sh
+helm upgrade poddeck-agent poddeck/poddeck-agent \
+  --reuse-values \
+  --set image.tag=v1.0.0 \
+  --set image.pullPolicy=IfNotPresent
+```
+
+`--reuse-values` preserves the previously set `cluster.id`, `cluster.key`, and `core.hostname`.
+
 ---
 
 ## GeoIP (Optional)
