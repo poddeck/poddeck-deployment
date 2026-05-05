@@ -77,6 +77,15 @@ Create your first user:
 
 PodDeck is now accessible at `http://localhost:8081` (or the port configured in `PANEL_PORT`).
 
+### Upgrade
+
+Pull the latest images and restart the stack:
+
+```sh
+docker compose pull
+docker compose down && docker compose up -d
+```
+
 ### Ports
 
 | Port | Service | Purpose |
