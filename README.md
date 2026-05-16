@@ -1,6 +1,6 @@
-# PodDeck Deployment
+# PodDeck
 
-Deploy [PodDeck](https://github.com/poddeck) — a multi-cluster Kubernetes management dashboard.
+The modern open-source Kubernetes interface.
 
 ## Architecture
 
